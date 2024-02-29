@@ -1,0 +1,39 @@
+-- DROP TABLE IF EXISTS products;
+
+-- CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- CREATE TABLE IF NOT EXISTS products(
+-- 	product_id UUID DEFAULT uuid_generate_v4(),
+-- 	product_price INTEGER CHECK(product_price > 0)
+-- );
+
+-- INSERT INTO products(product_price) VALUES
+-- (100);
+
+-- SELECT * FROM products;
+
+-- 2 - masla 
+
+-- DROP TABLE IF EXISTS cars;
+
+-- CREATE TABLE IF NOT EXISTS cars(
+-- 	cars_id UUID DEFAULT uuid_generate_v4(),
+-- 	cars_name VARCHAR(25) NOT NULL,
+-- 	cars_price INTEGER CHECK(cars_price > 0),
+-- 	cars_speed INTEGER CHECK(cars_speed > 0 AND cars_speed < 300)
+-- );
+
+-- INSERT INTO cars(cars_name, cars_price, cars_speed) VALUES
+-- ('JENTRA', 12000, 120),
+-- ('COBALT', 10000, 100),
+-- ('CAPTIVA', 16000, 140),
+-- ('EPICA', 22000, 150),
+-- ('EXIUNOX', 32000, 160);
+
+-- ALTER TABLE cars RENAME TO mashinalar;
+
+-- ALTER TABLE mashinalar ADD COLUMN massa INTEGER;
+
+-- ALTER TABLE mashinalar ADD COLUMN rangi VARCHAR(25);
+
+-- SELECT * FROM mashinalar;
